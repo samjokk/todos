@@ -46,9 +46,9 @@ describe('TaskFilterPanel', () => {
 
     let buttons = screen.getAllByRole('button');
 
-    expect(buttons[0]).toHaveClass('default');
-    expect(buttons[1]).toHaveClass('outline');
-    expect(buttons[2]).toHaveClass('outline');
+    expect(buttons[0]).toHaveClass('button-default');
+    expect(buttons[1]).toHaveClass('button-outline');
+    expect(buttons[2]).toHaveClass('button-outline');
 
     rerender(
       <TaskFilterPanel
@@ -59,9 +59,9 @@ describe('TaskFilterPanel', () => {
     );
 
     buttons = screen.getAllByRole('button');
-    expect(buttons[0]).toHaveClass('outline');
-    expect(buttons[1]).toHaveClass('default');
-    expect(buttons[2]).toHaveClass('outline');
+    expect(buttons[0]).toHaveClass('button-outline');
+    expect(buttons[1]).toHaveClass('button-default');
+    expect(buttons[2]).toHaveClass('button-outline');
 
     rerender(
       <TaskFilterPanel
@@ -72,9 +72,9 @@ describe('TaskFilterPanel', () => {
     );
 
     buttons = screen.getAllByRole('button');
-    expect(buttons[0]).toHaveClass('outline');
-    expect(buttons[1]).toHaveClass('outline');
-    expect(buttons[2]).toHaveClass('default');
+    expect(buttons[0]).toHaveClass('button-outline');
+    expect(buttons[1]).toHaveClass('button-outline');
+    expect(buttons[2]).toHaveClass('button-default');
   });
 
   it('calls changeFilter with correct arguments on filter button click', () => {

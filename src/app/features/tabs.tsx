@@ -26,8 +26,8 @@ const Tabs = memo(
               role='button'
               className={`px-3 py-1 rounded text-nowrap ${
                 isActive
-                  ? 'bg-gray-600 hover:bg-gray-700 text-white'
-                  : 'bg-gray-200 hover:bg-gray-300 text-gray-600'
+                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-600'
+                  : 'bg-gray-600 hover:bg-gray-700 text-white'
               }`}
               onClick={() => setSelectedId(list.id)}
             >

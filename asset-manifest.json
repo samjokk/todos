@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/samjokk/todos/static/css/main.28e72b47.css",
-    "main.js": "/samjokk/todos/static/js/main.8d9e6f48.js",
-    "index.html": "/samjokk/todos/index.html",
-    "main.28e72b47.css.map": "/samjokk/todos/static/css/main.28e72b47.css.map",
-    "main.8d9e6f48.js.map": "/samjokk/todos/static/js/main.8d9e6f48.js.map"
+    "main.css": "/todos/static/css/main.28e72b47.css",
+    "main.js": "/todos/static/js/main.8d9e6f48.js",
+    "index.html": "/todos/index.html",
+    "main.28e72b47.css.map": "/todos/static/css/main.28e72b47.css.map",
+    "main.8d9e6f48.js.map": "/todos/static/js/main.8d9e6f48.js.map"
   },
   "entrypoints": [
     "static/css/main.28e72b47.css",

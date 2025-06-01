@@ -24,7 +24,7 @@ export function Button({
     <button
       onClick={onClick}
       role='button'
-      className={`px-3 py-1 rounded text-white ${variants[variant]}`}
+      className={`px-3 py-1 rounded text-white ${variants[variant]} ${variant}`}
       {...props}
     >
       {children}

@@ -1,4 +1,3 @@
-// __tests__/TodoPage.test.tsx
 import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import TodoPage from '../app/features/todo-page';
@@ -54,11 +53,9 @@ describe('TodoPage', () => {
     const taskInput = screen.getByPlaceholderText(/что будешь делать/i);
     await userEvent.type(taskInput, 'Прочитать книгу{enter}');
 
-    // Отмечаем задачу выполненной
     const checkbox = screen.getByRole('checkbox');
     fireEvent.click(checkbox);
 
-    // Фильтр "Выполненные"
     const completedBtns = screen.getAllByRole('button', {
       name: /завершённые/i,
     });
@@ -66,7 +63,6 @@ describe('TodoPage', () => {
 
     expect(screen.getByText('Прочитать книгу')).toBeInTheDocument();
 
-    // Фильтр "Активные"
     const activeBtns = screen.getAllByRole('button', { name: /активные/i });
     fireEvent.click(activeBtns[0]);
 

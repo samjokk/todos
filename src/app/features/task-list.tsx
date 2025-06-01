@@ -9,12 +9,7 @@ export interface TaskListProps {
   toggleDone: (listId: string, taskId: string) => void;
 }
 
-export default function TaskList({
-  listId,
-  tasks,
-  deleteTask,
-  toggleDone,
-}: TaskListProps) {
+const TaskList = ({ listId, tasks, deleteTask, toggleDone }: TaskListProps) => {
   return (
     <ul className='space-y-2'>
       {tasks.map((task) => (
@@ -38,4 +33,6 @@ export default function TaskList({
       ))}
     </ul>
   );
-}
+};
+
+export default TaskList;

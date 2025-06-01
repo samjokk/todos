@@ -1,12 +1,12 @@
 import React, { useMemo, useState } from 'react';
 import { Button } from '../ui/button';
-import Tabs from '../entities/tabs';
+import Tabs from './tabs';
 import TodoCard from '../entities/todo-card/todo-card';
 import { TodoFilter, TodoList } from '../shared/models';
 
 const generateId = () => Math.random().toString(36).substring(2, 9);
 
-export default function TodoPage() {
+const TodoPage = () => {
   const [lists, setLists] = useState<TodoList[]>([]);
   const [newListName, setNewListName] = useState('');
 
@@ -107,4 +107,6 @@ export default function TodoPage() {
       />
     </div>
   );
-}
+};
+
+export default TodoPage;

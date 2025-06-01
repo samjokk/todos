@@ -23,6 +23,7 @@ const Tabs = memo(
           return (
             <button
               key={list.id}
+              role='button'
               className={`px-3 py-1 rounded text-nowrap ${
                 isActive
                   ? 'bg-gray-600 hover:bg-gray-700 text-white'

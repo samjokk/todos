@@ -1,17 +1,17 @@
 import { TodoFilter, TodoList } from '../shared/models';
 import { Button } from '../ui/button';
 
-export interface TodoFilterPanelProps {
+export interface TaskFilterPanelProps {
   list: TodoList;
   clearCompleted: (listId: string) => void;
   changeFilter: (listId: string, todoFilter: TodoFilter) => void;
 }
 
-export default function TodoFilterPanel({
+const TaskFilterPanel = ({
   list,
   clearCompleted,
   changeFilter,
-}: TodoFilterPanelProps) {
+}: TaskFilterPanelProps) => {
   return (
     <div className='flex gap-2 text-sm'>
       <Button
@@ -37,4 +37,6 @@ export default function TodoFilterPanel({
       </Button>
     </div>
   );
-}
+};
+
+export default TaskFilterPanel;

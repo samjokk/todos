@@ -39,8 +39,4 @@ const Tabs = memo(
   }
 );
 
-export function TabsContent({ children, value, value: activeValue }: any) {
-  return value === activeValue ? <div>{children}</div> : null;
-}
-
 export default Tabs;

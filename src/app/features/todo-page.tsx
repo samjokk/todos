@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Button } from '../ui/button';
-import Tabs, { TabsContent } from '../entities/tabs';
-import { TodoCard } from '../entities/todo-card/todo-card';
+import Tabs from '../entities/tabs';
+import TodoCard from '../entities/todo-card/todo-card';
 import { TodoFilter, TodoList } from '../shared/models';
 
 const generateId = () => Math.random().toString(36).substring(2, 9);
@@ -76,7 +76,7 @@ export default function TodoPage() {
   const [selectedId, setSelectedId] = useState<string | undefined>(undefined);
   const selectedList = useMemo(
     () => lists.find((list) => list.id === selectedId),
-    [selectedId]
+    [lists, selectedId]
   );
 
   return (
